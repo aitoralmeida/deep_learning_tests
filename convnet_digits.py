@@ -3,6 +3,12 @@
 Created on Sat Oct 17 14:49:41 2015
 
 http://blog.christianperone.com/2015/08/convolutional-neural-networks-and-feature-extraction-with-python/
+
+Don't install lasagne, theano and nolearn using pip, use the following:
+    
+pip install -r https://raw.githubusercontent.com/dnouri/nolearn/master/requirements.txt
+pip install git+https://github.com/dnouri/nolearn.git@master#egg=nolearn==0.7.git
+
 """
 
 import matplotlib
@@ -52,6 +58,8 @@ def load_dataset():
 
     return X_train, y_train, X_val, y_val, X_test, y_test
 
-    
+print 'Loading dataset...'    
 X_train, y_train, X_val, y_val, X_test, y_test = load_dataset()
+print 'Showing img...'
 plt.imshow(X_train[0][0], cmap=cm.binary)
+print 'FIN'
