@@ -112,7 +112,7 @@ net1 = NeuralNet(
 print '  -Training the net...'
 # Train the network
 nn = net1.fit(X_train, y_train)
-
+print '  -Layers:', len(nn.layers())
 
 
 
