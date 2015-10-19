@@ -4,6 +4,11 @@ http://martin-thoma.com/lasagne-for-python-newbies/
 
 works on my home pc
 
+If:
+    ImportError: cannot import name inplace_column_scale
+delete:    
+    python27\Lib\site-packages\sklearn\utils\sparsefuncs.pyd
+
 """
 
 import lasagne
