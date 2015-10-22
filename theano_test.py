@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 """
+Don't install lasagne, theano and nolearn using pip, use the following:
+    
+pip install -r https://raw.githubusercontent.com/dnouri/nolearn/master/requirements.txt
+pip install git+https://github.com/dnouri/nolearn.git@master#egg=nolearn==0.7.git
+
 http://martin-thoma.com/lasagne-for-python-newbies/#tocAnchor-1-4
 """
 
